@@ -1,0 +1,16 @@
+<div *ngIf="errorMessage" class="alert alert-danger text-center">
+    {{ errorMessage }}
+  </div>
+  <div *ngIf="recette" class="recipe-details">
+    <h2>{{ recette.nom }}</h2>
+    <img [src]="recette.image" [alt]="recette.nom" class="recipe-image">
+    <p><strong>Catégorie :</strong> {{ recette.category }}</p>
+    <p><strong>Ingrédients :</strong> {{ recette.ingredient }}</p>
+    <p><strong>Étapes :</strong> {{ recette.etapes }}</p>
+    <div class="actions">
+      <button (click)="goBack()" class="btn btn-secondary">Retour</button>
+    </div>
+  </div>
+  <div *ngIf="!recette && !errorMessage" class="loading">
+    <p>Chargement de la recette...</p>
+  </div>

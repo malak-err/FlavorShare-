@@ -1,0 +1,44 @@
+{
+  "Recette": [
+    {
+      "id": 1,
+      "nom": "Spaghetti Bolognese",
+      "ingredient": "Pâtes, viande hachée, tomate, oignon, ail",
+      "etapes": "Faire cuire les pâtes, préparer la sauce, mélanger.",
+      "image": "https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_1200/hellofresh_s3/image/snelle-spaghetti-bolognese-met-parmezaanse-kaas-d0f08780-a0ac633b.jpg",
+      "category": "Plat principal"
+    },
+    {
+      "id": 2,
+      "nom": "Gâteau au chocolat",
+      "ingredient": "Chocolat, farine, sucre, œufs, beurre",
+      "etapes": "Mélanger les ingrédients, cuire au four à 180°C.",
+      "image": "https://cdn.pratico-pratiques.com/app/uploads/sites/3/2018/08/20193108/gateau-mousse-aux-trois-chocolat.jpeg",
+      "category": "Dessert"
+    },
+    {
+      "id": "c008",
+      "nom": "MALAK",
+      "ingredient": "azertyuiop\n",
+      "etapes": "zertyuio",
+      "image": "https://scholarships.studyinromania.gov.ro",
+      "category": "azertyuio"
+    },
+    {
+      "id": "f1ed",
+      "nom": "Er-raoudy",
+      "ingredient": "sdfghjk",
+      "etapes": "nlll",
+      "image": "k,krkrro",
+      "category": "kkrkk'k"
+    },
+    {
+      "id": "a1f7",
+      "nom": "Lazaniya",
+      "ingredient": "beef ,kkk,kekeke,jejek,kekek,kekeeo,jdfhf,hfhfhr",
+      "etapes": "kdkfkfk,kfkkrk,,fkfkkk,kkf",
+      "image": "https://i.ytimg.com/vi/VkQajdYciW0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCM86tPr04JrEoa3Pakvj0qkmy6_A",
+      "category": "plat principale"
+    }
+  ]
+}

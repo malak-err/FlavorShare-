@@ -1,0 +1,63 @@
+
+<button class="btn btn-success mb-3" (click)="openModal()" style="background-color: #ff6f4c;border-color: #ff6f4c;margin-top: 30px;margin-left: 30px;">Ajouter une recette</button>
+<div class="recipe-container">
+    <div class="recipe-card" *ngFor="let recettes of recettes">
+      <div class="recipe-image">
+        <img [src]="recettes.image" [alt]="recettes.nom">
+        <div class="recipe-category">{{recettes.category}}</div>
+      </div>
+
+      <div class="recipe-content">
+        <h3 class="recipe-title">{{recettes.nom}}</h3>
+        <div class="recipe-info">
+          <span class="recipe-ingredients-count">
+            {{recettes.ingredient.split(',').length}} ingrédients
+          </span>
+          <div class="recipe-actions">
+            <i class="fas fa-edit"  title="Modifier"></i>
+            <i class="fas fa-trash" title="Supprimer"></i>
+          </div>
+          <a [routerLink]="['/details', recettes.id]" class="recipe-details-btn">
+            Voir la recette
+          </a>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <!-- Modal pour ajout -->
+<div class="modal fade" id="addRecetteModal" tabindex="-1" aria-labelledby="addRecetteModalLabel" >
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color: #feb47b; color: #ecf0f1;">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addRecetteModalLabel">Ajouter une recette</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="recetteForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="nom" formControlName="nom" required>
+            </div>
+            <div class="mb-3">
+              <label for="ingredient" class="form-label">Ingrédients</label>
+              <textarea class="form-control" id="ingredient" formControlName="ingredient" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="etapes" class="form-label">Étapes</label>
+              <textarea class="form-control" id="etapes" formControlName="etapes" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="image" class="form-label">URL de l'image</label>
+              <input type="text" class="form-control" id="image" formControlName="image" required>
+            </div>
+            <div class="mb-3">
+              <label for="category" class="form-label">Catégorie</label>
+              <input type="text" class="form-control" id="category" formControlName="category" required>
+            </div>
+            <button type="submit" class="btn btn-success" [disabled]="recetteForm.invalid">Enregistrer</button>
+            <button type="button" class="btn btn-secondary ms-2" data-bs-dismiss="modal">Annuler</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
