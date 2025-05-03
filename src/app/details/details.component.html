@@ -1,16 +1,62 @@
 <div *ngIf="errorMessage" class="alert alert-danger text-center">
-    {{ errorMessage }}
+  {{ errorMessage }}
+</div>
+<div *ngIf="recette" class="recipe-details">
+  <h2>{{ recette.nom }}</h2>
+  <img [src]="recette.image" [alt]="recette.nom" class="recipe-image">
+  <p><strong>Catégorie :</strong> {{ recette.category }}</p>
+  <p><strong>Ingrédients :</strong> {{ recette.ingredient }}</p>
+  <p><strong>Étapes :</strong> {{ recette.etapes }}</p>
+  <div class="actions">
+    <button (click)="openEditModal()" class="btn btn-primary me-2" title="Modifier">
+      <i class="fas fa-edit"></i> Modifier
+    </button>
+    <button (click)="deleterecette(recette.id)" class="btn btn-danger me-2" title="Supprimer">
+      <i class="fas fa-trash"></i> Supprimer
+    </button>
+    <button (click)="goBack()" class="btn btn-secondary">Retour</button>
   </div>
-  <div *ngIf="recette" class="recipe-details">
-    <h2>{{ recette.nom }}</h2>
-    <img [src]="recette.image" [alt]="recette.nom" class="recipe-image">
-    <p><strong>Catégorie :</strong> {{ recette.category }}</p>
-    <p><strong>Ingrédients :</strong> {{ recette.ingredient }}</p>
-    <p><strong>Étapes :</strong> {{ recette.etapes }}</p>
-    <div class="actions">
-      <button (click)="goBack()" class="btn btn-secondary">Retour</button>
+</div>
+<div *ngIf="!recette && !errorMessage" class="loading">
+  <p>Chargement de la recette...</p>
+</div>
+
+<!-- Edit Recipe Modal -->
+<div class="modal fade" id="editRecetteModal" tabindex="-1" aria-labelledby="editRecetteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editRecetteModalLabel">Modifier la recette</h5>
+        <button type="button" class="btn-close" (click)="closeEditModal()" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="recetteForm" (ngSubmit)="onUpdate()">
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" formControlName="nom" required>
+          </div>
+          <div class="mb-3">
+            <label for="ingredient" class="form-label">Ingrédients</label>
+            <textarea class="form-control" id="ingredient" formControlName="ingredient" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="etapes" class="form-label">Étapes</label>
+            <textarea class="form-control" id="etapes" formControlName="etapes" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="image" class="form-label">URL de l'image</label>
+            <input type="text" class="form-control" id="image" formControlName="image" required>
+          </div>
+          <div class="mb-3">
+            <label for="category" class="form-label">Catégorie</label>
+            <input type="text" class="form-control" id="category" formControlName="category" required>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="closeEditModal()">Annuler</button>
+            <button type="submit" class="btn btn-primary" [disabled]="!recetteForm.valid">Enregistrer</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-  <div *ngIf="!recette && !errorMessage" class="loading">
-    <p>Chargement de la recette...</p>
-  </div>
+</div>

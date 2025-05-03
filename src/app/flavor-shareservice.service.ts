@@ -28,8 +28,10 @@ deleteRecette(id: number): Observable<any> {
   return this.http.delete(`${this.apiurl}/${id}`);
 }
 
-getRecetteById(id: number): Observable<any> {
-  return this.http.get(`${this.apiurl}/${id}`);
+getRecetteById(id: number): Observable<Recette> {
+  const url = `${this.apiurl}/${id}`;
+  console.log('Requête envoyée à :', url);
+  return this.http.get<Recette>(url);
 }}
 
 

@@ -38,3 +38,86 @@
     font-size: 1.2rem;
     color: #666;
   }
+  .alert-danger {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .recipe-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .recipe-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px; 
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    border-color: #ff7e5f;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+  }
+  
+  .btn-primary:hover {
+    background-color: #eb7254;
+    border-color: #eb7254;
+  }
+  
+  .btn-danger {
+    padding: 10px 20px;
+    background-color: #feb47b;
+    border-color: #feb47b;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .btn-danger:hover {
+    background-color: #f7a668;
+    border-color: #f7a668;
+  }
+  
+  .btn-secondary {
+    padding: 10px 20px;
+    background-color: #b8b9ba;
+    border-color: #b8b9ba;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+  
+  .loading {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: #666;
+  }

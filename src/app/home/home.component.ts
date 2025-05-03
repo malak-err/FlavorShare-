@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private recetteService: FlavorShareserviceService, private fb: FormBuilder) {
     this.recetteForm = this.fb.group({
+      id: ['', Validators.required],
       nom: ['', Validators.required],
       ingredient: ['', Validators.required],
       etapes: ['', Validators.required],
@@ -33,9 +34,7 @@ export class HomeComponent implements OnInit {
       next: (data) => {
         this.recettes = data;
       },
-      error: (error) => {
-        console.error('Erreur lors du chargement des recettes:', error);
-      }
+     
     });
   }
 
@@ -56,9 +55,7 @@ export class HomeComponent implements OnInit {
           this.recetteForm.reset();
           this.closeModal();
         },
-        error: (error) => {
-          console.error('Erreur lors de l\'ajout de la recette:', error);
-        }
+      
       });
     }
   }

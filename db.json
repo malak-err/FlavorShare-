@@ -1,43 +1,35 @@
 {
   "Recette": [
     {
-      "id": 1,
-      "nom": "Spaghetti Bolognese",
-      "ingredient": "Pâtes, viande hachée, tomate, oignon, ail",
-      "etapes": "Faire cuire les pâtes, préparer la sauce, mélanger.",
-      "image": "https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_1200/hellofresh_s3/image/snelle-spaghetti-bolognese-met-parmezaanse-kaas-d0f08780-a0ac633b.jpg",
-      "category": "Plat principal"
+      "id": "1",
+      "nom": "Lasania",
+      "ingredient": " couches alternées de pâtes lasagnes, parmesan, mozzarella, ou ricotta, et de sauce bolognaise ou sauce béchamel, gratinée au four.",
+      "etapes": "\nLaissez reposer la lasagne au frigo, la sauce ne s'en infiltrera que mieux. Le lendemain ou le soir-même, il vous suffira d'enfourner. Comptez alors dix minutes de plus que le temps de cuisson normal, pour que le plat soit bien chaud.",
+      "image": "https://i.ytimg.com/vi/VkQajdYciW0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCM86tPr04JrEoa3Pakvj0qkmy6_A",
+      "category": "plat principale"
     },
     {
-      "id": 2,
-      "nom": "Gâteau au chocolat",
-      "ingredient": "Chocolat, farine, sucre, œufs, beurre",
-      "etapes": "Mélanger les ingrédients, cuire au four à 180°C.",
-      "image": "https://cdn.pratico-pratiques.com/app/uploads/sites/3/2018/08/20193108/gateau-mousse-aux-trois-chocolat.jpeg",
+      "id": "2",
+      "nom": "Tiramissou chocolat",
+      "ingredient": "la base est composée d'œufs, de sucre, de café froid, de mascarpone d'alcool (Marsala ou Amaretto) pour imbiber un biscuits mou (boudoirs, génoise, biscuits cuiller) et de cacao en poudre",
+      "etapes": "Lorsque vous dressez votre gâteau, vous alternez une couche de crème et une couche de biscuits. Si les biscuits trempés dans le café sont trop imbibés, cela détend la crème et l'empêche de prendre. Notre conseil : lorsque vous imbibez les biscuits dans le café, trempez-les rapidement.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Iz1Ns0mxS5QFdyd5PWbHp2j2RBTH2KxiPQ&s",
+      "category": "dessert"
+    },
+    {
+      "id": "3",
+      "nom": "flan à la texture soyeuse de Christophe Michalak",
+      "ingredient": "600 millilitres de lait,\n160 millilitres de crème liquide entière,\n1 gousse de vanille fendue,\n130 grammes de sucre semoule,\n60 grammes de maïzena,\n6 jaunes d’œufs,\n1 pincée de sel,\n1 pâte feuilletée,",
+      "etapes": "Combinez 600 ml de lait et 160 ml de crème liquide entière dans la casserole. Coupez la gousse de vanille en deux et sortez les grains au couteau, puis intégrerez-les à la préparation. Chauffez le mélange jusqu'à ce qu'il frémisse, puis laissez infuser à couvert pendant 20 minutes.\nDans un saladier, associez 130 grammes de sucre semoule et 60 grammes de maïzena. Suivant le conseil du chef pour éviter les grumeaux, incorporez 6 jaunes d'œufs et une pincée de sel.\nVersez doucement le mélange jaune d'œuf et sucre dans la casserole contenant le lait et la crème, puis faites cuire l'ensemble jusqu'au premier bouillon.\nRetirez la gousse, utilisez un mixeur plongeant pour obtenir une consistance homogène, puis versez le mélange dans un moule de 24 centimètres préalablement garni d'une pâte feuilletée précuite.\nPlacez le flan au four et laissez-le cuire jusqu'à ce qu'une légère croûte se forme à la surface (environ 15-20 minutes). Poursuivez ensuite la cuisson pendant environ 30 minutes à 180°C dans un four ventilé.\n",
+      "image": "https://cache.cosmopolitan.fr/data/photo/w1536_ci/6j/flan-parisien.webp",
       "category": "Dessert"
     },
     {
-      "id": "c008",
-      "nom": "MALAK",
-      "ingredient": "azertyuiop\n",
-      "etapes": "zertyuio",
-      "image": "https://scholarships.studyinromania.gov.ro",
-      "category": "azertyuio"
-    },
-    {
-      "id": "f1ed",
-      "nom": "Er-raoudy",
-      "ingredient": "sdfghjk",
-      "etapes": "nlll",
-      "image": "k,krkrro",
-      "category": "kkrkk'k"
-    },
-    {
-      "id": "a1f7",
-      "nom": "Lazaniya",
-      "ingredient": "beef ,kkk,kekeke,jejek,kekek,kekeeo,jdfhf,hfhfhr",
-      "etapes": "kdkfkfk,kfkkrk,,fkfkkk,kkf",
-      "image": "https://i.ytimg.com/vi/VkQajdYciW0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCM86tPr04JrEoa3Pakvj0qkmy6_A",
+      "id": "4",
+      "nom": "soupe chinoise",
+      "ingredient": "1Soupe asiatique aux champignons,\n2Soupe ramen à base de dashi, œuf mollet, légumes et crevettes,\n3Soupe repas de nouilles aux oeufs,\n4Soupe ramen végé,\n5Soupe tonkinoise (pho) ,\n6Soupe au cari rouge au poulet et aux crevettes. ,\n7Soupe ramen au curry rouge.,",
+      "etapes": "Préparation des ingrédients\nFaire gonfler les champignons dans 1/4 de litre d'eau bouillante. Couper les légumes et les blancs de poulet en petits dés.\n2\nCuisson de la soupe chinoise\nFaire chauffer un peu d'huile dans une cocotte. Y faire revenir les légumes (sauf les petits pois et les germes de soja) sans les colorer. Saupoudrer de curry. Verser 1 litre d'eau chaude. Saler et poivrer. Ajouter les dés de poulet et les petits pois.\n3Egoutter les champignons et les couper en fines lanières. Ajouter à la préparation antérieure. Assaisonner avec la sauce soja. Porter à ébullition et cuire à feu moyen pendant 25 minutes.\nFinitions et service\n10 minutes avant la fin de cuisson, ajouter le vermicelle et les germes de soja. Servir très chaud",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEtudyku-w14D_vi2E8pfypVIUdc4A2AXR2A&s",
       "category": "plat principale"
     }
   ]

@@ -24,7 +24,7 @@
       </div>
     </div>
   </div>
-  <!-- Modal pour ajout -->
+  
 <div class="modal fade" id="addRecetteModal" tabindex="-1" aria-labelledby="addRecetteModalLabel" >
     <div class="modal-dialog">
       <div class="modal-content" style="background-color: #feb47b; color: #ecf0f1;">
@@ -34,6 +34,10 @@
         </div>
         <div class="modal-body">
           <form [formGroup]="recetteForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="nom" class="form-label">Id</label>
+              <input type="text" class="form-control" id="id" formControlName="id" required>
+            </div>
             <div class="mb-3">
               <label for="nom" class="form-label">Nom</label>
               <input type="text" class="form-control" id="nom" formControlName="nom" required>
